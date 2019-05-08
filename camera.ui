@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>960</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="App" name="mast_camera" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>320</width>
+      <height>240</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="axis_1" name="axis_1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>0</y>
+      <width>320</width>
+      <height>240</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="axis_2" name="axis_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>320</width>
+      <height>240</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="axis_3" name="axis_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>240</y>
+      <width>320</width>
+      <height>240</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="motor_Code" name="motorcode" native="true">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>9</y>
+      <width>320</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="axis_4" name="axis_4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>240</y>
+      <width>320</width>
+      <height>240</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Logo">
+    <property name="geometry">
+     <rect>
+      <x>860</x>
+      <y>0</y>
+      <width>100</width>
+      <height>100</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>logo1.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>960</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>App</class>
+   <extends>QWidget</extends>
+   <header>cam8.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>axis_1</class>
+   <extends>QWidget</extends>
+   <header>axis_1.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>axis_2</class>
+   <extends>QWidget</extends>
+   <header>axis_2.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>axis_3</class>
+   <extends>QWidget</extends>
+   <header>axis_3.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>axis_4</class>
+   <extends>QWidget</extends>
+   <header>axis_4.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>motor_Code</class>
+   <extends>QWidget</extends>
+   <header>tcp_send.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
